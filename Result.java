@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 /**
- * Pass or Fail
+ * Question 2 : Grade Evaluator
  *
  * @author Lajana
  * @version v1.0
@@ -11,10 +11,10 @@ public class Result
     public static void main (String[] args){
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter the marks:");
-        float m= scan.nextFloat();
+        int m= scan.nextInt();
         scan.nextLine();
         String g;
-        g = (m >= 40) ? ("\u2192 Pass") : ("\u2192 Fail");
-        System.out.println(g);
+        g = (m >= 40) ? ("Passed") : ("Failed");
+        System.out.println("Your Result: \n You have got "+m+" marks.\t You have "+g);
     }
 }

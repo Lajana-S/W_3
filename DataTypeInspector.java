@@ -1,6 +1,6 @@
 
 /**
- * Inspector
+ * Question 3 : Data Type Inspector
  *
  * @author Lajana
  * @version v1.0
@@ -18,13 +18,13 @@ public class DataTypeInspector
         char g = 'a';
         boolean h = true;
         
-        System.out.println("Byte value : "+a);
-        System.out.println("Short value : "+b);
-        System.out.println("Int value : "+c);
-        System.out.println("Long value : "+d);
-        System.out.println("Float value : "+e);
-        System.out.println("Double value : "+f);
-        System.out.println("Char value : "+g);
+        System.out.println("Byte value    : "+a);
+        System.out.println("Short value   : "+b);
+        System.out.println("Int value     : "+c);
+        System.out.println("Long value    : "+d);
+        System.out.println("Float value   : "+e);
+        System.out.println("Double value  : "+f);
+        System.out.println("Char value    : "+g);
         System.out.println("Boolean value : "+h);
     }
 }

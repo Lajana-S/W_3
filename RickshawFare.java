@@ -29,22 +29,23 @@ public class RickshawFare
         m = scan.nextDouble();
         scan.nextLine();
         
+        
         System.out.println("Are you a local? (YES/NO)");
         String l = scan.next();
         
-        dis = (l == "YES" || l == "yes"|| k >= 80) ? (45) : (0);
+        dis = (l.equals("YES") || l.equals("yes") || k >= 80) ? 25 : 0; //l=="YES" compares the memory place
         
         System.out.println("Is it a night-time travel? (YES/NO)");
         String n = scan.next();
         
-        ni = (n == "YES" || n == "yes") ? (50) : (0);
+        ni = (n.equals("YES") || n.equals("yes")) ? 50 : 0;
         
         double km = 5.5 * k;
         double min = 1.23 * m;
-        double net = fare + km + min;
-        double night = ni * net * 0.01;
-        double to = net + night;
-        double discount = dis * to * 0.01;
+        double t = fare + km + min;
+        double night = ni * t / 100;
+        double to = t + night;
+        double discount = dis * to / 100;
         double total = to - discount;
         
         System.out.println("");
@@ -54,19 +55,19 @@ public class RickshawFare
         System.out.println("");
         System.out.println("=========================================");
         System.out.println("");
-        System.out.println("Base Fare : Rs."+fare);
-        System.out.println("Distance : "+k+"km");
-        System.out.println("Time : "+m+"min");
-        System.out.println("Local : "+l);
+        System.out.println("Base Fare         : Rs."+fare);
+        System.out.println("Distance          : "+k+" km");
+        System.out.println("Time              : "+m+" mins");
+        System.out.println("Local             : "+l);
         System.out.println("Night-time Travel : "+n);
         System.out.println("-----------------------------------------");
         System.out.println("");
         System.out.println("Base Fare              : Rs."+fare);
-        System.out.println("Km Fare                : Rs."+km);
-        System.out.println("Min Fare               : Rs."+min);
-        System.out.println("Net Fare               : Rs."+net);
-        System.out.println("     -------------------------------     ");
+        System.out.println("Kilo-meter Fare        : Rs."+km);
+        System.out.println("Minute Fare            : Rs."+min);
         System.out.println("Night-time Travel Fare : Rs."+night);
+        System.out.println("     -------------------------------     ");       
+        System.out.println("Net Fare               : Rs."+to);
         System.out.println("     -------------------------------     ");
         System.out.println("Discount               : Rs."+discount);
         System.out.println("     -------------------------------     ");

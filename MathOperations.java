@@ -1,6 +1,6 @@
 
 /**
- * Operations
+ * Question 1
  *
  * @author Lajana
  * @version v1.0
@@ -19,7 +19,7 @@ public class MathOperations
         System.out.println("");
         
         System.out.println("Unary Operators:");
-        int a0=3;
+        int a0=1;
         System.out.println("a ="+a0);
         int a1=a0++;
         System.out.println("a++ ="+a1);
@@ -54,8 +54,8 @@ public class MathOperations
         System.out.println("");
         
         System.out.println("Ternary Operators:");
-        int larger;
-        larger= (a>b) ? a : b;
+        int larger, p = 30, q = 82;
+        larger= (p>q) ? p : q;
         System.out.println(larger+" is greater number.");
         
     }

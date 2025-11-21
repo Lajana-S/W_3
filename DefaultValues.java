@@ -29,5 +29,8 @@ public class DefaultValues
         System.out.println("Char default value : "+defaults.g);
         System.out.println("Boolean default value : "+defaults.h);
         
+        /* This would not work for local variables
+         * because they are not assigned to a default value
+         */
     }
 }
