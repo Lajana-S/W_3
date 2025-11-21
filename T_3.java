@@ -1,15 +1,16 @@
 
 /**
- * Write a description of class T_3 here.
+ * Tutorial_3
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author Lajana
+ * @version v1.0
  */
 public class T_3
 {
     int age;//instance variable
     static int qty;//static veriable
     public static void main(String[] args){
+        
     //implicit typecasting 
     int n1=1;//local variable
     System.out.println(n1); 

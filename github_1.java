@@ -7,7 +7,17 @@
  */
 public class github_1
 {
+    int age;
+    static int qty;
     public static void main(String[] args){
-    System.out.println("First time using github");
+        int agr=10;
+        System.out.println(qty);// method and variable both are static
+        
+        //<className> <variable> = new <className()>;
+        
+        github_1 w1 = new github_1();
+        System.out.println(w1.age);// method is static and variable is instance
+        
+    
     }
 }
