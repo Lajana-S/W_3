@@ -28,10 +28,10 @@ public class MathOperations
         
         int b0=3;
         System.out.println("b ="+b0);
-        int b1=b0++;
-        System.out.println("b++ ="+b1);
-        int b2=++b0;
-        System.out.println("++b ="+b2);
+        int b1=b0--;
+        System.out.println("b-- ="+b1);
+        int b2=--b0;
+        System.out.println("--b ="+b2);
         System.out.println("");
         
         System.out.println("Assignment Operator:");
